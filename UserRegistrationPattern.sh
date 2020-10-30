@@ -1,4 +1,4 @@
-#! /bin/bash 
+O#! /bin/bash 
 
 echo "              Welcome to User Registration Program"
 echo "---------------------------------------------------------------------"
@@ -35,7 +35,7 @@ result=$(validate $email $emailPattern)
 echo  $result
 
 #TO PATTERN CHECK FOR MOBILE NUMBER
-read -p "Enter the Mobile No : " email
+read -p "Enter the Mobile No : " mobile
 mobilePattern='^(\+?\d{1,3})[ ]([0-9]{10})$'
 result=$(validate $mobile $mobilePattern)
 echo  $result
