@@ -39,3 +39,9 @@ read -p "Enter the Mobile No :" mobile
 mobilePattern='^(\+?\d{1,3})[ ]([0-9]{10})$'
 result=$(validate $mobile $mobilePattern)
 echo  $result
+
+#TO PATTERN CHECK FOR PASSWORD
+read -p "Enter the password :" password
+passwordPattern='^[a-zA-Z0-9!?.+-~!@#$%^&*_]{8,}$'
+result=$(validate $password $passwordPattern)
+echo  $result
