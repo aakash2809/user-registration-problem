@@ -42,6 +42,6 @@ echo  $result
 
 #TO PATTERN CHECK FOR PASSWORD
 read -p "Enter the password :" password
-passwordPattern='^[a-zA-Z0-9!?.+-~!@#$%^&*_]{8,}$'
+passwordPattern='^(?=.*[A-Z])[a-zA-Z0-9!?.+-~!@#$%^&*_]{8,}$'
 result=$(validate $password $passwordPattern)
 echo  $result
