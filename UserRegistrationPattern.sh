@@ -1,4 +1,4 @@
-O#! /bin/bash 
+#! /bin/bash
 
 echo "              Welcome to User Registration Program"
 echo "---------------------------------------------------------------------"
@@ -42,6 +42,6 @@ echo  $result
 
 #TO PATTERN CHECK FOR PASSWORD
 read -p "Enter the password :" password
-passwordPattern='^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9!?.+-~!@#$%^&*_]{8,}$'
+passwordPattern='^(?=.*[0-9])(?=.*[A-Z])(?=.*[~!.+?_><!@#$%^&*])[a-zA-Z0-9!?.+-~!@#$%^&*_]{8,}$'
 result=$(validate $password $passwordPattern)
 echo  $result
