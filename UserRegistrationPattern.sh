@@ -33,3 +33,9 @@ read -p "Enter the Email Id : " email
 emailPattern='^([A-Za-z\d-_\+]+)(\.[A-Za-z\d-_]+)?@([a-zA-Z\d]+)\.([a-zA-Z]{2,4})(\.[A-Za-z]{2,4})?$'
 result=$(validate $email $emailPattern)
 echo  $result
+
+#TO PATTERN CHECK FOR MOBILE NUMBER
+read -p "Enter the Mobile No : " email
+mobilePattern='^(\+?\d{1,3})[ ]([0-9]{10})$'
+result=$(validate $mobile $mobilePattern)
+echo  $result
