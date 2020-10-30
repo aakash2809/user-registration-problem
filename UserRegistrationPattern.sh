@@ -24,7 +24,12 @@ echo  $result
 
 #PATTERN CHECK FOR LAST NAME
 read -p "Enter the last name : " lastName
-lastNamePattern='^[A-Z]{1}[a-zA-Z]{2,}$'
+lastNamePattern='^[A-Z]{1}[a-zA-Z]{3,}$'
 result=$(validate $lastName $lastNamePattern)
 echo  $result
 
+#TO PATTERN CHECK FOR EMAIL ID
+read -p "Enter the Email Id : " email
+emailPattern='^([A-Za-z\d-_\+]+)(\.[A-Za-z\d-_]+)?@([a-zA-Z\d]+)\.([a-zA-Z]{2,4})(\.[A-Za-z]{2,4})?$'
+result=$(validate $email $emailPattern)
+echo  $result
